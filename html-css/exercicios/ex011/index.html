@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Mídias em HTML5</title>
+    </head>
+
+    <body>
+        <h1>Mídias em HTML5</h1>
+
+        <h2>Imagens dinâmicas</h2>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+        <picture>
+            <!--Adapta a resolução da imagem pra tornar o HTML mais leve.-->
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1000px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem flexível">
+        </picture>
+
+        <h2>Reproduzindo Áudios</h2>
+        <p>Vamos aprender a reproduzir um áudio.</p>
+        <!-- Primeira maneira de aplicar áudios.
+            <audio src="midia/july.mp3" controls autoplay></audio>
+        -->
+        <audio preload="metadata" autoplay controls loop>
+            <source src="midia/july.mp3" type="audio/mpeg">
+            <source src="midia/july.ogg" type="audio/ogg">
+            <source src="midia/july.wav" type="audio/wav">
+        </audio>
+
+        <h2>Vídeos</h2>
+    </body>
+
+</html>
